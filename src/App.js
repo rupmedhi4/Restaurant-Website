@@ -1,14 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
-import Header from './Components/Layout/Header';
-import FoodSummary from "./Components/Meals/FoodSummary";
-
+import React,{Fragment} from "react";
+import Header from "./Components/Layout/Header";
+import Meals from "./Components/Meals/Meals";
 function App() {
   return (
-    <>
+    <Fragment>
       <Header />
-      <FoodSummary />
-    </>
+      <main>
+        <Meals />
+      </main>
+    </Fragment>
   );
 }
 
